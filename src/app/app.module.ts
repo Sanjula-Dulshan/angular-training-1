@@ -7,14 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 
-const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'user', component: UserComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-];
 @NgModule({
   declarations: [AppComponent, HomeComponent, UserComponent],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
